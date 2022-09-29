@@ -1,8 +1,29 @@
-import React, { useState } from "react";
+import React from "react";
 import { Col, Row, Container } from "react-bootstrap";
 import "./education.css";
+import Timeline from "./Timeline";
 
 const Education = () => {
+  const timelineItems = [
+    {
+      qualification : "SSLC",
+      year : "2013-2014",
+      institute : "Zion Good shepherd's matriculation higher secondary school",
+      mark : "96%"
+    },
+    {
+      qualification : "HSC",
+      year : "2015-2016",
+      institute : "Zion Good shepherd's matriculation higher secondary school",
+      mark : "85%"
+    },
+    {
+      qualification : "BE / CSE",
+      year : "2016-2020",
+      institute : "K.L.N College Of Engineering",
+      mark : "73%"
+    }
+  ]
   return (
     <Container className="education-container">
       <Row>
@@ -10,39 +31,9 @@ const Education = () => {
           <h3>Education</h3>
           <div className="timeline-box">
             <div className="timeline">
-              <div className="timeline-item">
-                <div className="circle"></div>
-                <h3 className="timeline-date">
-                  <i class="uil uil-calendar-alt"></i> 2013-2014
-                </h3>
-                <h4 className="timeline-title">SSLC</h4>
-                <p className="timeline-text">
-                  Zion Good shepherd's matriculation higher secondary school
-                </p>
-                <p>percentage :<span>96%</span> </p>
-              </div>
-              <div className="timeline-item">
-                <div className="circle"></div>
-                <h3 className="timeline-date">
-                  <i class="uil uil-calendar-alt"></i> 2015-2016
-                </h3>
-                <h4 className="timeline-title">HSC</h4>
-                <p className="timeline-text">
-                  Zion Good shepherd's matriculation higher secondary school
-                </p>
-                <p>percentage :<span>85%</span> </p>
-              </div>
-              <div className="timeline-item">
-                <div className="circle"></div>
-                <h3 className="timeline-date">
-                  <i class="uil uil-calendar-alt"></i> 2016-2020
-                </h3>
-                <h4 className="timeline-title">BE / CSE</h4>
-                <p className="timeline-text">
-                  K.L.N College Of Engineering
-                </p>
-                <p>percentage :<span>73%</span> </p>
-              </div>
+              {timelineItems.map((timelineItem,i) => {
+                return <Timeline key={i} props={timelineItem} />
+              })}
             </div>
           </div>
         </Col>
@@ -53,7 +44,7 @@ const Education = () => {
               <div className="timeline-item">
                 <div className="circle"></div>
                 <h3 className="timeline-date">
-                  <i class="uil uil-calendar-alt"></i> 2020-Present
+                  <i className="uil uil-calendar-alt"></i> 2020-Present
                 </h3>
                 <h4 className="timeline-title">SSO Engineer</h4>
                 <p className="timeline-text">
@@ -69,7 +60,7 @@ const Education = () => {
               <div className="timeline-item">
                 <div className="circle"></div>
                 <h3 className="timeline-date">
-                  <i class="uil uil-calendar-alt"></i> 2021-present
+                  <i className="uil uil-calendar-alt"></i> 2021-present
                 </h3>
                 <h4 className="timeline-title">Web Development</h4>
                 <p className="timeline-text">
@@ -77,6 +68,7 @@ const Education = () => {
                 </p>
                 <ul>
                   <li>Working with HTML, CSS, Javascript</li>
+                  <li>Wrking with react components</li>
                   <li>Working with React hooks like useState,useEffect</li>
                   <li>Working with multiple libraries </li>
                 </ul>

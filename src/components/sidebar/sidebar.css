@@ -29,6 +29,13 @@
 }
 .nav-items{
     margin: 25px;
+    position: relative;
+}
+.under-line{
+    height: 2px;
+    width: 100%;
+    background-color: #fbac8d;
+    margin-top: 5px;
 }
 .nav-items a{
     text-decoration: none;
@@ -73,6 +80,7 @@
 @media screen and (max-width : 576px){
     .sidebar{
         background-color: #bd5d38;
+        position: sticky;
         display: flex;
         height: 50px;
         width: 100%;

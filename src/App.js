@@ -6,7 +6,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Skills from "./components/skills/Skills";
 import Education from "./components/education/Education";
 import Projects from "./components/projects/Projects";
-import ContactUs from "./components/contact/ContactUs";
 import { Col, Container, Row } from "react-bootstrap";
 
 function App() {
@@ -21,14 +20,13 @@ function App() {
             lg={9}
             md={9}
             sm={10}
-            className="mt-5"
+            className="main-content"
           >
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/skills" element={<Skills />} />
               <Route path="/education" element={<Education />} />
               <Route path="/projects" element={<Projects />} />
-              <Route path="/contact-us" element={<ContactUs />} />
             </Routes>
           </Col>
         </Row>

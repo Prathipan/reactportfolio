@@ -1,6 +1,7 @@
 import React from "react";
 import "./home.css";
 import { Typewriter } from "react-simple-typewriter";
+import CV from "../../assets/PrathipanCV.pdf";
 
 const Home = () => {
   return (
@@ -24,19 +25,32 @@ const Home = () => {
           </span>
         </h1>
         <p className="about-content">
-          I am experienced in leveraging agile frameworks to provide a robust
-          synopsis for high level overviews. Iterative approaches to corporate
-          strategy foster collaborative thinking to further the overall value
-          proposition.
+          I'm Prathipan.I'm currently working as an Analyst in HCL Technologies. Intrested in working with web applications.
+          I'm continuously practicing  front end web applications and having some basic knowledge on backend technology.
         </p>
+        <a download="" href={CV} className="button mt-5">
+          Download CV
+        </a>
         <div className="social-icons">
-          <a href="https://www.linkedin.com/in/prathipan-p-8b6a28124/" target="_blank" rel="noreferrer noopener">
+          <a
+            href="https://www.linkedin.com/in/prathipan-p-8b6a28124/"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
             <i className="uil uil-linkedin social-icon"></i>
           </a>
-          <a href="https://github.com/Prathipan" target="_blank" rel="noreferrer noopener">
+          <a
+            href="https://github.com/Prathipan"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
             <i className="uil uil-github social-icon"></i>
           </a>
-          <a href="https://www.instagram.com/praveen_24_/" target="_blank" rel="noreferrer noopener">
+          <a
+            href="https://www.instagram.com/praveen_24_/"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
             <i className="uil uil-instagram social-icon"></i>
           </a>
         </div>
