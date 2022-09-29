@@ -25,6 +25,7 @@ const Projects = () => {
     {
       title : "Movies App",
       description : "List of movies with description. we can like and dislike movies. Performed CRUD Operations.Added trailer inside webpage.",
+      url : "https://cosmic-croquembouche-c40e58.netlify.app/"
       img : moviesApp
     }
   ]
