@@ -53,7 +53,7 @@ const Education = () => {
                 <ul>
                   <li>Monitoring servers</li>
                   <li>Working with Kibana</li>
-                  <li>Analuzing server logs</li>
+                  <li>Analyzing server logs</li>
                   <li>Doing patching activities</li>
                 </ul>
               </div>
