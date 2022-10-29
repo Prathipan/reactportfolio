@@ -68,7 +68,7 @@ const Education = () => {
                 </p>
                 <ul>
                   <li>Working with HTML, CSS, Javascript</li>
-                  <li>Wrking with react components</li>
+                  <li>Working with react components</li>
                   <li>Working with React hooks like useState,useEffect</li>
                   <li>Working with multiple libraries </li>
                 </ul>
